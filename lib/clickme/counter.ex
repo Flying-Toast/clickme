@@ -18,7 +18,7 @@ defmodule Clickme.Counter do
   def handle_cast(:inc, count) do
     count = Decimal.add(count, 1)
     PubSub.broadcast(Clickme.PubSub, "click_count", :newclick)
-    if Decimal.rem(count, 10) |> Decimal.eq?(0) do
+    if Decimal.rem(count, 100) |> Decimal.eq?(0) do
       Clicks.persist(count)
     end
 
