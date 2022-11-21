@@ -15,7 +15,7 @@ defmodule Clickme.Clicks do
     clicks
     |> cast(attrs, [:num, :title, :bg_color])
     |> validate_required([:num, :title, :bg_color])
-    |> validate_length(:title, max: 30)
+    |> validate_length(:title, max: 150)
     |> validate_format(:bg_color, ~r/#[0-9a-f]{6}/)
   end
 

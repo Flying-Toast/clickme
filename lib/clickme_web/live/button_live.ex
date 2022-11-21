@@ -20,7 +20,7 @@ defmodule ClickmeWeb.ButtonLive do
     <div style={ "background-color: #{@bg_color};"} class="flex justify-center items-center h-full flex-col">
       <div class="-mb-20 mt-6 text-center w-10/12">
         <form phx-change="title_edit">
-          <input maxlength="30" name="title" class="font-bold text-xl font-serif rounded-md bg-gray-200 border-2 border-gray-400 text-center w-full" value={@title}/>
+          <input maxlength="150" name="title" class="font-bold text-xl font-serif rounded-md bg-gray-200 border-2 border-gray-400 text-center w-full" value={@title}/>
         </form>
         <div class="invert-text">(Edit Me)</div>
       </div>
