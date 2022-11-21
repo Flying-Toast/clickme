@@ -5,3 +5,8 @@
 [data-phx-main="true"] {
 	height: 100%;
 }
+
+.invert-text {
+	color: white;
+	mix-blend-mode: difference;
+}
