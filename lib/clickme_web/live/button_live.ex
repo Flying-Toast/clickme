@@ -10,8 +10,8 @@ defmodule ClickmeWeb.ButtonLive do
 
   def render(assigns) do
     ~H"""
-    <button phx-click="click" class="bg-gray-200 border-4 border-gray-400 px-10 py-4 text-xl rounded">
-      <span class="font-mono font-bold"><%= @counter %></span>
+    <button phx-click="click" class="bg-gray-200 border-4 border-gray-400 px-10 py-4 text-xl rounded touch-manipulation">
+      <span class="font-mono font-bold touch-manipulation"><%= @counter %></span>
     </button>
     """
   end
